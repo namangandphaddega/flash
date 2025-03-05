@@ -325,6 +325,8 @@ Pr-ice List💸 :
 Day-->7 Rs
 Week-->50 Rs
 Month-->180 Rs
+
+dm to buy @SLAYER_OP7
 '''
     bot.reply_to(message, response)
 
